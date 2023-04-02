@@ -1,0 +1,38 @@
+<mat-toolbar color="primary">
+ 
+  <button mat-icon-button class="example-icon" routerLink="/home" aria-label="Example icon-button with menu icon"  >
+     <mat-icon>home</mat-icon>
+   </button>  
+
+
+   <span>Proyecto</span>
+   <span class="example-spacer"></span>
+
+   <button mat-icon-button class="example-icon" routerLink="/AcercaDe" matTooltip="AcercaDe"   >
+     <mat-icon>account_circle</mat-icon>
+    
+   </button>
+   <button mat-icon-button class="example-icon" routerLink="/categorias"  matTooltip="PROYECTO"   >
+     <mat-icon>ssid_chart</mat-icon>
+   </button>
+   <button mat-icon-button class="example-icon"  matTooltip="PROYECTO"   >
+     <mat-icon>logout</mat-icon>
+   </button>
+ </mat-toolbar>
+ <div class="h-90 col-12 p-4 p-lg-5">
+  <div class="row p-0 m-0 h-100 ">
+      <div class="col-12 p-0 ">
+        <div class="row p-0 m-0  ">
+         
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <router-outlet></router-outlet>
+              </div>
+      
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>

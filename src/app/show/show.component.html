@@ -1,0 +1,27 @@
+<div class="col-12">
+    <button mat-raised-button color="primary" (click)="redirect()"   matTooltip="VER PERFIL!"   >
+        REGRESAR
+      </button>
+      <br>
+    </div>
+
+<div class="col-12">
+    <br>
+
+
+    <mat-card class="example-card">
+        <mat-card-header>
+
+            <mat-card-title>{{showPerson?.photographer}}</mat-card-title>
+          <mat-card-subtitle>{{showPerson?.id}}</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image src="{{showPerson?.src?.large}}" alt="Photo of a Shiba Inu">
+        <mat-card-content>
+          <p>      
+            {{showPerson?.alt}}
+          </p>
+        </mat-card-content>
+    
+        
+      </mat-card>
+</div>
